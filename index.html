@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Changer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading__text">CSS Changer with JavaScript</h1>
+    </header>
+    <main>
+      <section class="container">
+
+        <div class="range__container">
+            <!-- Color Picker -->
+        <label for="base">Base Color</label>
+        <input type="color" name="base" id="base" value="#ff0000" />
+
+        <!-- Width Range -->
+        <label for="width">Width</label>
+        <input
+          type="range"
+          name="width"
+          id="width"
+          min="0"
+          max="100"
+          value="10"
+          data-sizing="%" />
+        <!-- Border Radios Range-->
+          <label for="border-radius">Border-Radios</label>
+          <input 
+          type="range"
+          id="border-radius"
+          name="border-radius"
+          min="0"
+          max="100"
+          value="1"
+          data-sizing="px"/>
+        <!-- Padding Range -->
+         <label for="padding">Padding</label>
+         <input 
+         type="range"
+         id="padding"
+         name="padding"
+         min="0"
+         max="100"
+         value="1"
+         data-sizing="px"
+         />
+
+         <label for="blur">Blur</label>
+         <input 
+         type="range"
+         id="blur"
+         name="blur"
+         min="0"
+         max="100"
+         value="0"
+         data-sizing="px"
+         />
+        </div>
+        <figure class="image__container">
+            <img src="./assets/yeneffer.webp" alt="Picture of Gwent Card">
+        </figure>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
